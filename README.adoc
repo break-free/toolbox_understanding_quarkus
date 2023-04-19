@@ -40,3 +40,4 @@ Check the output for any errors. If any, raise an issue in this repository.
 
 == Post Installation
 
+Enjoy!
