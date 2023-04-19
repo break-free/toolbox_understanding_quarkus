@@ -14,7 +14,7 @@ For Fedora Kinoite, both `toolbox` and `podman` are installed.
 
 `podman` needs to be configured so that you can run it as `root`, to support `minikube`. Add the following line to your respective `/etc/sudoers.d/$USER` file:
 
-    sudo bash -c 'echo -e "$USER ALL = NOPASSWD: /user/bin/podman" > /etc/sudoers.d/$USER'
+    sudo bash -c 'echo -e "$USER ALL = NOPASSWD: /usr/bin/podman" > /etc/sudoers.d/$USER'
 
 To install `minikube` follow the instructions here: https://minikube.sigs.k8s.io/docs/start/
 
