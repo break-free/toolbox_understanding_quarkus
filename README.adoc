@@ -1,0 +1,42 @@
+= Set-up Fedora Kinoite for Understanding Quarkus
+
+The fascicle _Understanding Quarkus_ by Antonio Goncalves is an intermediate introduction to Quarkus and associated tools to build microservices and an API layer.
+
+The script, `toolbox_understanding_quarkus.sh`, sets up a Toolbox that contains necessary binaries to run through the fascicle. Additional binaries are required to be installed on the host OS, specifically `toolbox`, `podman`, and `minikue` and these are covered here.
+
+== Pre Installation
+
+For your specific OS install `toolbox`, `podman`, and `minikue`.
+
+=== Fedora Kinoite-specific Instructions
+
+For Fedora Kinoite, both `toolbox` and `podman` are installed.
+
+`podman` needs to be configured so that you can run it as `root`, to support `minikube`. Add the following line to your respective `/etc/sudoers.d/$USER` file:
+
+    sudo bash -c 'echo -e "$USER ALL = NOPASSWD: /user/bin/podman" > /etc/sudoers.d/$USER'
+
+To install `minikube` follow the instructions here: https://minikube.sigs.k8s.io/docs/start/
+
+- *NOTE* that `kubectl` is not required to be installed separately as the `minikube` version will be used.
+
+=== Download needed binaries
+
+Two binaries are required, GraalVM and Kafka. Download using the below links, and appropriate versions for the fascicle.
+
+- GraalVM: https://www.graalvm.org/downloads/ (use v20.3), should be a `*.tar.gz` file.
+- Kafka: https://kafka.apache.org/downloads (use 2.6.0), should be a `*.tgx` file.
+
+Once downloaded, move them to the same folder where you intend to run the `toolbox_understanding_quarkus.sh` script from.
+
+== Toolbox Installation
+
+Download `toolbox_understanding_quarkus.sh` to the same folder as the GraalVM and Kafka downloads, make it executable as a user (i.e, non-root), and run it.
+
+    $ chmod 755 toolbox_understanding_quarkus.sh
+    $ ./toolbox_understanding_quarkus.sh
+
+Check the output for any errors. If any, raise an issue in this repository.
+
+== Post Installation
+
