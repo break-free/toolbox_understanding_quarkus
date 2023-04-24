@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Copyright Ⓒ 2023 Monty <jack.monty.usa@gmail.com>, All rights reserved
-#
-#title       :toolbox_quarkus.sh
-#description :This script will create a toolbox to support following the
-#             guide by Antonio Goncalves, _Understanding Quarkus_.
-#author      :jack.monty.usa@gmail.com
+#title       :  toolbox_quarkus.sh
+#description :  This script will create a toolbox to support following the
+#             guide by Antonio Goncalves, _Understanding Quarkus_ (2020).
+#author      :  Chris Mills, cmills@breakfreesolutions.com
 #notes       :  `toolbox`, `podman` and `minikube` must be installed on the
 #             local host. GraalVM and Kafka tar files for installation must
 #             also be downloaded in to the same folder where this script is
