@@ -19,6 +19,7 @@ For Fedora Kinoite, both `toolbox` and `podman` are installed.
 To install `minikube` follow the instructions here: https://minikube.sigs.k8s.io/docs/start/
 
 - *NOTE* that `kubectl` is not required to be installed separately as the `minikube` version will be used.
+- *NOTE* that `minikube` is expected to be located at `/usr/local/bin`. If this is not the case, then update the script to reflect the installation directory used.
 
 === Download needed binaries
 
